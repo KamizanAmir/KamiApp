@@ -1,7 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="34" />
     <application
+        android:usesCleartextTraffic="true"
         android:label="boring"
         android:name="${applicationName}"
+        android:screenOrientation="landscape"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
