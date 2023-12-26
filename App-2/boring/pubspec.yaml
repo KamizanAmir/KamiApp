@@ -63,6 +63,7 @@ flutter:
    - images/aic_icon.jpg
    - images/murder_mafia.gif
    - images/drunken_boxing.gif
+   - images/8_ball.gif
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'home_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.landscapeRight,
     DeviceOrientation.landscapeLeft,
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       builder: (context, child) {
         return AnnotatedRegion<SystemUiOverlayStyle>(
-          value: SystemUiOverlayStyle(
+          value: const SystemUiOverlayStyle(
             statusBarColor: Colors.transparent, // Set status bar color to transparent
             systemNavigationBarColor: Colors.transparent, // Set navigation bar color to transparent
           ),
