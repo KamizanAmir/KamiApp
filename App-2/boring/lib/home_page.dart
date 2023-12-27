@@ -3,11 +3,11 @@ import 'package:flutter/services.dart';
 import 'web_view.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
   @override
   Widget build(BuildContext context) {
     // Hide system UI (status bar and navigation bar)
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive, overlays: []);
-
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.red,
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Playable in Landscape',
                     style: TextStyle(
                       color: Colors.white,
@@ -54,7 +54,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.red,
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Playable in Landscape',
                     style: TextStyle(
                       color: Colors.white,
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.red,
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Playable in Landscape',
                     style: TextStyle(
                       color: Colors.white,
@@ -90,7 +90,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.red,
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Playable in Landscape',
                     style: TextStyle(
                       color: Colors.white,
@@ -126,7 +126,6 @@ class HomePage extends StatelessWidget {
                               ),
                               TextButton(
                                 style: TextButton.styleFrom(
-                                  primary: Colors.white,
                                   padding: const EdgeInsets.all(16.0),
                                   minimumSize: const Size(100, 0),
                                 ),
@@ -173,7 +172,6 @@ class HomePage extends StatelessWidget {
                               ),
                               TextButton(
                                 style: TextButton.styleFrom(
-                                  primary: Colors.white,
                                   padding: const EdgeInsets.all(16.0),
                                   minimumSize: const Size(100, 0),
                                 ),
@@ -220,7 +218,6 @@ class HomePage extends StatelessWidget {
                               ),
                               TextButton(
                                 style: TextButton.styleFrom(
-                                  primary: Colors.white,
                                   padding: const EdgeInsets.all(16.0),
                                   minimumSize: const Size(100, 0),
                                 ),
@@ -231,7 +228,7 @@ class HomePage extends StatelessWidget {
                                           MyWebView(
                                             title: "8 Ball Pool",
                                             selectedUrl:
-                                                "https://www.y8.com/games/8_ball_pool/",
+                                                "http://www.freeonlinegames.com/embed/145575",
                                           ),
                                     ),
                                   );
